@@ -59,6 +59,20 @@ Browsers have started to add experimental support for the {{DOMxRef("AbortContro
 - {{DOMxRef("Response")}}
   - : Represents the response to a request.
 
+## Examples
+
+### Fetch API POST Request Example:
+
+const data = { YOUR_DATA }
+let res = await fetch('url', {
+  method: 'POST',
+  headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+let response = await res.json()
+
 ## Specifications
 
 {{Specifications}}
